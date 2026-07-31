@@ -1,0 +1,51 @@
+:root {
+  color-scheme: light dark;
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: start center;
+  background: light-dark(#fafaf8, #101014);
+  color: light-dark(#1a1a1a, #ececec);
+}
+
+.shell {
+  width: min(38rem, 92vw);
+  padding: 3rem 0 4rem;
+}
+
+h1 {
+  font-size: 2.4rem;
+  margin: 0 0 0.25rem;
+}
+
+.subtitle {
+  margin: 0 0 2rem;
+  color: light-dark(#555, #a0a0a0);
+}
+
+.card {
+  border: 1px solid light-dark(#e2e2dc, #2a2a30);
+  border-radius: 10px;
+  padding: 1.25rem 1.5rem;
+  background: light-dark(#fff, #17171c);
+}
+
+code {
+  background: light-dark(#f0f0ea, #24242b);
+  padding: 0.1rem 0.35rem;
+  border-radius: 4px;
+}
+
+button {
+  margin-top: 0.75rem;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  border: none;
+  background: #4361ee;
+  color: #fff;
+  cursor: pointer;
+}

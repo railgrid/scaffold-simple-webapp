@@ -1,0 +1,14 @@
+{
+  "name": "kedge-scaffold-simple-webapp",
+  "private": true,
+  "type": "module",
+  "description": "Starter for the kedge simple-webapp template: a single Vite app on one public URL.",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "start": "node server.mjs"
+  },
+  "devDependencies": {
+    "vite": "^6.0.0"
+  }
+}
