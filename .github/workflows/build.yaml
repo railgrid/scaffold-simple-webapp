@@ -1,7 +1,7 @@
 name: Build
 
 # Smoke-tests the app, then builds and pushes the Railpack image — the same
-# builder App Studio uses for user projects, so a green build here proves the
+# builder the platform uses for user projects, so a green build here proves the
 # scaffold is buildable exactly the way real projects are built. Pushes happen
 # on main (latest + sha-<commit>) and on v* tags (<tag> + latest); PRs run the
 # smoke test only.
@@ -35,8 +35,12 @@ jobs:
           npm install --no-audit --no-fund
           npm run build
           PORT=8090 npm start &
+          # Structural probe only: the app must boot and serve a page.
+          # NEVER assert page content here. Projects seeded from this scaffold
+          # replace the page immediately, so a content check (it used to grep
+          # for "kedge") turns every real change into a red build.
           for i in $(seq 1 15); do
-            curl -fsS localhost:8090/ | grep -qi kedge && exit 0
+            curl -fsS -o /dev/null localhost:8090/ && exit 0
             sleep 1
           done
           exit 1
