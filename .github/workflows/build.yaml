@@ -38,7 +38,7 @@ jobs:
           # Structural probe only: the app must boot and serve a page.
           # NEVER assert page content here. Projects seeded from this scaffold
           # replace the page immediately, so a content check (it used to grep
-          # for "kedge") turns every real change into a red build.
+          # for "faros") turns every real change into a red build.
           for i in $(seq 1 15); do
             curl -fsS -o /dev/null localhost:8090/ && exit 0
             sleep 1
