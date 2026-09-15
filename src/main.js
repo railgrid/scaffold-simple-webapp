@@ -6,7 +6,7 @@ document.querySelector('#app').innerHTML = `
   <main class="shell">
     <h1>It runs.</h1>
     <p class="subtitle">
-      This is the <strong>faros simple-webapp scaffold</strong> — a single
+      This is the <strong>railgrid simple-webapp scaffold</strong> — a single
       Vite app on one public URL. Replace it with your site.
     </p>
     <section class="card">

@@ -1,6 +1,6 @@
 # Rules for coding agents working in this repository
 
-This project runs on the faros `simple-webapp` template: ONE container
+This project runs on the railgrid `simple-webapp` template: ONE container
 serving HTTP on ONE public URL. No backend tier, no database. These rules are
 the platform contract — code that breaks them will not run, however correct
 it looks.

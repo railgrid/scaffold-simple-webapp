@@ -1,8 +1,8 @@
 {
-  "name": "faros-scaffold-simple-webapp",
+  "name": "scaffold-simple-webapp",
   "private": true,
   "type": "module",
-  "description": "Starter for the faros simple-webapp template: a single Vite app on one public URL.",
+  "description": "Starter for the railgrid simple-webapp template: a single Vite app on one public URL.",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
